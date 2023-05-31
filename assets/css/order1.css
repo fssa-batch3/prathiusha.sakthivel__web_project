@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 body {
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -13,6 +16,7 @@ header {
     top: 0;
     z-index: 2;
     display: flex;
+
 }
 
 .menu-bar ul {
@@ -29,7 +33,7 @@ header {
 
 .menu-bar {
     width: 100%;
-    margin-left: 100px;
+    margin-left: 250px;
     margin-top: 40px;
 }
 
@@ -47,7 +51,14 @@ a {
 .menu-bar ul li {
     padding-left: 70px;
 }
-
+#cartcount{
+    font-size: 24px;
+    color: white;
+    font-weight: 800px;
+    position: relative;
+    top: -45px;
+    left: -5px;
+}
 .logo {
     border: 2px solid white;
     border-radius: 20px;
@@ -78,21 +89,17 @@ main {
 
 .box {
     border: 2px solid white;
-    height: 400px;
-    width: 850px;
+    height: 850px;
+    width: 1200px;
     box-shadow: -10px 10px 30px 10px rgb(218, 224, 220);
     border-radius: 0px;
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 300px;
+    left: 150px;
     top: 200px;
 }
-/* .box img{
-    height: 340px;
-    width: 350px;
 
-} */
 .offimg{
     height: 70px;
     width: 70px;
@@ -107,20 +114,35 @@ main {
 
 h2 {
     font-size: 30px;
-    color: rgb(45, 102, 103);
+    color: rgb(26, 66, 67);
+    position: relative;
+    left: 5px;
+    top:20px;
 }
 
 h4 {
-    font-size: 25px;
-    color: rgb(129, 64, 18);
+    font-size: 30px;
+    color: rgb(121, 70, 33);
     position: relative;
-    left: 30px;
+    left: 8px;
+    top: -10px;
+  
 }
-
+.description{
+    font-weight: 18px;
+    line-height: 1.3;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-top: 18px;
+    font-size: 21px;
+    color: rgb(123, 121, 121);
+}
 
 #star{
     color: gold;
     font-size: 16px;
+    position: relative;
+   
 }
 
 .quantity {
@@ -142,12 +164,11 @@ h4 {
     height: 38px;
     width: 195px;
     border: 0px solid rgb(108, 145, 53);
-    border-radius: 40px;
     background-color: rgb(108, 145, 53);
     color: white;
     position: relative;
-    top: 60px;
-    right: 200px;
+    top: -10px;
+    left: -280px;
 
 }
 
@@ -157,21 +178,38 @@ h4 {
     height: 40px;
     width: 200px;
     border: 0px solid rgb(108, 145, 53);
-    border-radius: 40px;
     background-color: rgb(108, 145, 53);
     color: white;
     position: relative;
-    top: 120px;
+    top: -10px;
+    left: 250px;
     
 }
 i {
     padding-right: 10px;
 
 }
-
-i:hover {
-    color: rgb(248, 10, 10);
+.fas{
+    color: black;
+    position: relative;
+    left: 30px;
+    top: -75px;
 }
+#price{
+    position: relative;
+    left: 30px;
+    top: -73px;
+}
+/* #add-to-cart{
+    position: relative;
+    top: -50px;
+
+} */
+
+
+/* i:hover {
+    color: rgb(248, 10, 10);
+} */
 
 .heading2 {
     border: 2px solid white;
@@ -185,9 +223,12 @@ i:hover {
 }
 
 h3 {
-    text-align: center;
-    color: red;
-    font-size: 35px;
+    /* text-align: center; */
+    color: rgb(51, 17, 202);
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+    
 }
 
 li {
@@ -291,6 +332,217 @@ hr {
 
 }
 .tomato{
-    height: 300px;
-    width: 300px;
+    height: 390px;
+    width: 350px;
+    position: relative;
+    top: 80px;
+}
+i{
+    margin-left: 70px;
+    color: white;
+    font-size: 25px;
+}
+#cartCount{
+    position: relative;
+    left:-5px;
+    top: -30px;
+    text-align: center;
+    font-size:23px;
+    border: 3px solid white;
+    border-radius:15px;
+    width:20px;
+    bottom:65px;
+}
+input {
+     /* border: none; */
+    outline: none; 
+    width: 100px;
+    height: 40px;
+    margin: 15px 0;
+    position: relative;
+    top: -23px;
+    left: -15px;
+    /* padding: 7px; */
+}
+button {
+    border: none;
+    background-color: red;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin: 10px 10px -10px 40px;
+    position: relative;
+    left: -30px;
+    top: -25px;
+
+}
+button:hover {
+    background-color: #333;
+}
+
+   
+@media screen and (max-width:400px) {
+    header {
+
+        background-color: rgb(108, 145, 53);
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        display: flex;
+    }
+    
+    .menu-bar ul {
+        list-style: none;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-around; */
+        text-decoration: none;
+    
+    }
+    
+    
+    /* .menu-bar {
+        margin-left: 270px;
+        margin-top: 40px;
+    } */
+    
+    .hdg {
+        font-size: 20px;
+        position: relative;
+        left: -450px;
+        top: 60px;
+    }
+    
+    header a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+    }
+    
+    .menu-bar ul li {
+        /* padding-left: 20px; */
+        margin-top: -50px;
+    }
+    
+    .logo {
+        border: 2px solid white;
+        border-radius: 20px;
+        height: 40px;
+        width: 120px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+    .navi {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navi:hover {
+        font-size: 35px;
+        color: black;
+    }
+    .box {
+        border: 2px solid white;
+        height: 820px;
+        width: 350px;
+        box-shadow: -10px 10px 30px 10px rgb(218, 224, 220);
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 30px;
+        top: 200px;
+    }
+    
+    .offimg{
+        height: 70px;
+        width: 70px;
+    }
+    .heading1 {
+        position: relative;
+        margin-top: -20px;
+        margin-left: 50px;
+        font-size: 35px;
+    
+    }
+    
+    h2 {
+        font-size: 30px;
+        color: rgb(45, 102, 103);
+    }
+    
+    h4 {
+        font-size: 25px;
+        color: rgb(129, 64, 18);
+        position: relative;
+        left: 10px;
+    }
+    
+    
+    #star{
+        color: gold;
+        font-size: 18px;
+        
+    }
+    
+    .quantity {
+        height: 35px;
+        width: 230px;
+        border-radius: 40px;
+        color: rgb(108, 145, 53);
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        top: 30px;
+        left: -5px;
+    }
+    
+    
+    #buybutton {
+        font-size: 18px;
+        font-weight: 600;
+        height: 38px;
+        width: 240px;
+        border: 0px solid rgb(108, 145, 53);
+        border-radius: 40px;
+        background-color: rgb(108, 145, 53);
+        color: white;
+        position: relative;
+        top: 10px;
+        left: -5px;
+    
+    }
+    
+    #cartbutton{
+        font-size: 18px;
+        font-weight: 600;
+        height: 40px;
+        width: 240px;
+        border: 0px solid rgb(108, 145, 53);
+        border-radius: 40px;
+        background-color: rgb(108, 145, 53);
+        color: white;
+        position: relative;
+        top: 120px;
+        left: -5px;
+        
+    }
+    .tomato{
+        height: 330px;
+        width: 350px;
+    }
+    hr{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
 }

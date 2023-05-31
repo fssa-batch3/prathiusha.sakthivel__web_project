@@ -4,7 +4,8 @@ body {
     text-align: center;
     font-size: 20px;
     font-weight: 500;
-    background-image: url(../image/loginbg.jpeg);
+    background-image: url(../image/various-vegetables-black-table-with-space-message.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,8 +47,8 @@ form {
     width: 320px;
     margin-right: 10px;
     color: white;
-    border: 0px solid rgb(35, 129, 35);
-    background-color: rgb(35, 129, 35);
+    border: 0px solid #1d242e;
+    background-color: #1d242e;
     border-radius: 10px;
     font-size: 18px;
 
@@ -62,10 +63,10 @@ a {
 .mhd {
     background-color: white;
     border: 2px solid white;
-    box-shadow:20px 20px 20px  rgb(223, 221, 221);
+    box-shadow:-7px 5px 40px  rgb(223, 221, 221);
     border-radius: 50px;
-    height: 670px;
-    width: 400px;
+    height: 650px;
+    width: 380px;
     padding: 5px 10px;
 
 }
@@ -108,7 +109,7 @@ a {
 } */
 
 .fa-brands {
-    color: rgb(35, 129, 35);
+    color:  #1d242e;
     padding-left: 20px;
     font-size: 33px;
     margin-right: 30px;
@@ -117,7 +118,7 @@ a {
 }
 
 .fa-brands:hover {
-    color: rgb(98, 184, 219);
+    color: rgb(35, 129, 35);
     font-size: 35px;
 }
 
@@ -136,31 +137,36 @@ a {
     body {
         margin: 0%;
         padding: 0%;
-        height: 890px;
+        height: 750px;
         width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .mhd {
         background-color: white;
         border: 2px solid white;
         box-shadow: 20px 20px 20px rgb(218, 224, 220);
-        border-radius: 40px;
+        border-radius:0px;
         height: 600px;
-        width: 280px;
+        width: 400px;
         margin-top: -180px;
+        
     }
 
     .icon {
         margin-left: -6px;
         /* margin-top: -5px; */
+        margin-top: -20px;
 
     }
 
     .fa-brands {
         color: rgb(35, 129, 35);
-        padding-left: 10px;
+        padding-left: 30px;
         font-size: 25px;
         margin-right: 20px;
+     
     }
 
     .check {
@@ -184,24 +190,25 @@ a {
     }
 
     .but {
-        width: 230px;
+        width: 320px;
     }
 
     #username {
-        width: 230px;
+        width: 320px;
     }
 
     #email {
-        width: 230px;
+        width: 320px;
     }
 
     #password {
-        width: 230px;
+        width: 320px;
     }
 
     .img {
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 200px;
+        margin-top: 20px;
     }
 
 }

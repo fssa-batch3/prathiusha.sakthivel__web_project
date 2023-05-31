@@ -1,65 +1,191 @@
 body {
-    font-size: 20px;
-    background-color: rgb(244, 244, 223);
     font-size: 25px;
-    
+    color: rgb(76, 73, 73);
+    overflow-x: hidden;
+}
+
+
+header {
+    background-color: rgb(108, 145, 53);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    margin-top: -10px;
+    margin-left: -7px;
+}
+
+a {
+    transition: 0.5s;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+.menu-bar .main {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+.menu-bar {
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+}
+
+.menu-bar .main a {
+    padding-left: 70px;
 }
 
 .logo {
-    position: relative;
-    left: 640px;
-    border-radius: 30px;
-}
-input{
-    height: 30px;
-    width: 400px;
-    border-radius: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 60px;
+    width: 170px;
+    margin-left: 250px;
+    margin-top: 20px;
 }
 
-button{
-    height: 35px;
+.hd1 {
+    float: right;
+    color: white;
+    word-spacing: 35px;
+    font-size: 25px;
+    margin-right: 150px;
+    margin-top: 40px;
+
+}
+
+input {
+    height: 50px;
+    width: 400px;
+    border: none;
+
+}
+
+button {
+    height: 45px;
     width: 220px;
     border: 0px solid rgb(108, 145, 53);
     background-color: rgb(108, 145, 53);
     border-radius: 10px;
-    font-size: 17px;
+    font-size: 19px;
     color: white;
     margin-left: 180px;
+    scroll-behavior: smooth;
+
+}
+html{
+    scroll-behavior: smooth;
     
+}
+.container {
+    padding-left: 30px;
+    border: 3px solid gainsboro;
+    box-shadow: -5px 5px 10px 5px rgb(218, 214, 214);
+    background-color: rgb(244, 240, 240);
+    height: 600px;
+    width: 1100px;
+    position: relative;
+    left: 170px;
+    top: 180px;
+
 }
 
-.container{
-    padding-left: 30px;
-    border: 3px solid rgb(247, 246, 246);
-    box-shadow: -5px 5px 10px 5px  rgb(218, 214, 214);
-    border-radius: 30px;
-    background-color: white;
-    height: 550px;
-    width: 600px;
-    margin-left: 450px;
-    margin-top: 100px;
-    
+.create {
+    position: relative;
+    top: -430px;
+    left: 450px;
 }
-input:focus{
-    border-radius: 30px;
+
+.update {
+    position: relative;
+    top: -430px;
+    left: 270px;
+}
+
+
+.separate {
+    position: relative;
+    left: 600px;
+    top: -510px;
+}
+
+.titlename {
+    padding: 30px 30px 30px 30px;
+}
+
+.imageurl {
+    padding: 30px 30px 30px 30px;
+
+}
+
+.productprice {
+    padding: 30px 30px 30px 30px;
+
+}
+
+.Quantity {
+    padding: 30px 30px 30px 30px;
+
+}
+
+.rating {
+    padding: 30px 30px 30px 30px;
+
+}
+
+input:focus {
     outline: none;
     border-color: rgb(56, 86, 9);
-    box-shadow: 1px 1px 1px 1px rgb(108, 145, 53);
-}
-#image{
-    margin-top: 30px;
-    margin-left: 20px;
-}
-#titlename{
-    margin-top: 30px;
-    margin-left: 65px;
-}
-#price{
-    margin-top: 30px;
-    margin-left: 60px;
-}
-#ratings{
-    margin-top: 30px;
-    margin-left: 45px;
+    box-shadow: 2px 2px 2px 2px dimgray;
 }
 
+table {
+    /* border: 2px solid black; */
+    position: relative;
+    top: -180px;
+    left: -150px;
+
+}
+
+table td img {
+    width: 150px;
+    height: 150px;
+}
+
+table button {
+    height: 30px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -60px;
+}
+
+tr {
+    background-color: rgb(204, 214, 200);
+}

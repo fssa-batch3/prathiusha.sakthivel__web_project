@@ -8,39 +8,483 @@
     <link rel="stylesheet" href="../assets/css/buynow.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Buynow</title>
 
 </head>
 
 <body>
-    <!-- header -->
     <header>
-        <div class="hd">
-            <img class="logo" src="../assets/image/mainlogo.png" height="70px" width="150px" alt="img">
-        </div>
-        <hr>
-    </header>
-    <!-- details -->
-    <main>
-        <div class="mainpage">
-            <div class="borderbox">
-                <h2>Add Address Details</h2>
-                <div class="label">
-                    <label for="first-name">Full Name:<input type="text" name="fname" class="box" required></label><br>
-                    <label for="Phonenumber">Phonenumber:<input type="number" name="fname" class="box"
-                            required></label><br>
-                    <label for="address">House No,Building Name:<input type="text" name="fname" class="box"
-                            required></label><br>
-                    <label for="city">City:<input type="text" required class="box" name="fname" required></label><br>
-                    <label for="state">State:<input type="text" required class="box" name="fname" required></label><br>
-                    <label for="Pincode">Pincode:<input type="number" required class="box" name="fname"
-                            required></label><br>
-                    <button class="next"><a href="bankdet.html">Next</a></button>
+
+        <img class="logo" src="../assets/image/mainlogo.png" height="80px" width="250px" alt="img">
+
+        <div class="menu-bar">
+
+            <div class="main">
+                <a href="../index.html">Home </a>
+
+                <!-- <a href="../html/about.html">About </a> -->
+
+                <div class="dropdown">
+
+                    <a class="product" href="../html/veges.html">Products</a>
+
+                    <!-- <div class="dropdown-content">
+                  <a href="html/login.html">Fresh Fruits</a>
+                  <a href="html/login2.html">Fresh Vegetables</a>
+                </div> -->
                 </div>
+
+                <a href="../html/sellerpage.html">Seller</a>
+
+                <a href="../html/profilepage.html">Profile</a>
+
             </div>
         </div>
-    </main>
+
+    </header>
+
+    <div class="container">
+
+        <form id="payment_details">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">Shipping address</h3>
+
+                    <!-- <div class="inputBox">
+                        <span>full name :</span>
+                        <input id="fullname" type="text" title="Firstname cannot contain number or space"
+                            required="true" pattern="[A-Za-z]{1,32}">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input id="email" type="email"
+                            pattern="^[a-zA-Z0-9][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                            title="Your password must be at least 8 characters long, contain at least one digit or special character, one uppercase letter, and one lowercase letter, and must not contain dots or newline characters."
+                            required="true">
+                    </div> -->
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input id="address" type="text" title="Fill the address field" required="true">
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input id="city" type="text" title="City field cannot be empty" required="true"
+                            pattern="[A-Za-z]{1,32}">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input id="state" type="text" title="State field cannot be empty" required="true"
+                                pattern="[A-Za-z]{1,32}">
+                        </div>
+                        <div class="inputBox">
+                            <span>Pincode :</span>
+                            <input id="pincode" type="number" minlength="5" maxlength="7"
+                                title="Firstname cannot contain space" required="true">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <span>Mobile Number:</span>
+                        <input id="mobilenumber" type="tel" required="true">
+                    </div>
+
+
+                </div>
+
+                <div class="col">
+
+                    <h3 class="title">payment</h3>
+                    <input type="radio" class="payment_option" id="upi" name="rdo" value="upi" required><span
+                        class="span1">UPI</span>
+                    <img class="labelimg1" src="../assets/image/google-pay.png" height="50px" width="50px" alt="img">
+                    <div class="inputBox">
+                        <span class="span2"><input type="radio" id="expand" name="rdo">cards accepted :</span>
+                        <img src="../assets/image/card_img.png" alt="">
+                    </div>
+                    <div class="hidden">
+                        <!-- <div class="inputBox">
+                        <span>name on card :</span>
+                        <input id="name_on_card" class="payment_option" type="text">
+                    </div>
+                    <div class="inputBox">
+                        <span>Card number :</span>
+                        <input id="creditcard" type="number">
+                    </div>
+                    <div class="inputBox">
+                        <span class="mobile">Branch Name:</span>
+                        <input id="branchname" type="text">
+                    </div>
+                    <div class="inputBox">
+                        <label>Card Expiry (MM/YYYY)
+                        <input type="tel" id="cc_exp" placeholder="•• / ••••" data-payment='cc-exp'>
+                       </label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="mobile">CVV Number:</span>
+                        <input id="cvv" type="text">
+                    </div> -->
+                    </div>
+                    <input type="radio" class="payment_option" id="cashondelivery" name="rdo" value="cash_on_delivery"
+                        required><span class="span3">Cash on Delivery</span>
+                    <img class="labelimg2" src="../assets/image/cash-payment.png" height="38px" width="40px" alt="img">
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- <input type="submit" value="proceed to checkout" class="submit-btn" > -->
+            <button class="submit-btn" type="submit">proceed to checkout</button>
+        </form>
+
+    </div>
+    <div class="store">
+
+        <h1 class="ordersummary">Order Summary</h1>
+        <!-- <div class="box_div">
+            <p class="product1">Product:</p>
+            <img class="tomato" src="../assets/image/tomato.jpg" alt="image">
+            <p class="name1">Product Name:</p>
+            <h1 class="titlename">FreshorganicTomato</h1>
+            <p class="price">Product Price:</p>
+            <h2 class="amount">₹ 50</h2>
+          
+        </div> -->
+
+    </div>
+
+    <script>
+        const getdetails = document.getElementById("payment_details");
+        getdetails.addEventListener("submit", (ele) => {
+            ele.preventDefault();
+            getdata()
+        })
+
+
+        let ondate;
+        const objectdate = new Date();
+        const month = objectdate.getUTCMonth() + 1;
+        const day = objectdate.getUTCDate();
+        const year = objectdate.getUTCFullYear();
+        ondate = `${day}/${month}/${year}`;
+        console.log(ondate);
+
+        // orderid
+        const order_id = Date.now();
+        console.log(order_id);
+
+
+        const products = JSON.parse(localStorage.getItem('create_product'));
+
+
+        const url = window.location.search;  //?name=FreshOrganicTomato
+        console.log(url)
+        const urls = new URLSearchParams(url)
+        console.log(urls)//"name":"FreshOrganicTomato"
+        const name = urls.get("name")
+        console.log(name)//"FreshOrganicTomato"
+
+        const get_buyerdetails = JSON.parse(localStorage.getItem("buyerdetails")) ?? [];
+
+        function getdata() {
+            const address = document.getElementById("address").value;
+            const city = document.getElementById("city").value;
+            const state = document.getElementById("state").value;
+            const pincode = document.getElementById("pincode").value;
+            const mobilenumber = document.getElementById("mobilenumber").value;
+            // const name_on_card=document.getElementById("name_on_card").value;
+            // const creditcard=document.getElementById("creditcard").value;
+            // const branchname=document.getElementById("branchname").value;
+            // const cc_exp=document.getElementById("cc_exp").value;
+            // const cvv=document.getElementById("cvv").value;
+            const active_user = JSON.parse(localStorage.getItem("active_user"))
+
+            get_buyerdetails.push({
+                // "fullname": active_user.Firstname,
+                // "email": active_user.email,
+                address,
+                city,
+                state,
+                pincode,
+                mobilenumber
+                // name_on_card,
+                // creditcard,
+                // branchname,
+                // cc_exp,
+                // cvv
+            })
+
+            localStorage.setItem("buyerdetails", JSON.stringify(get_buyerdetails));
+
+            const payment_option = document.querySelector(".payment_option:checked").value
+
+            const user = JSON.parse(localStorage.getItem("active_user"));
+            const order = JSON.parse(localStorage.getItem("order")) ?? [];
+
+            if (name == Number(name)) {
+
+                products.find((el) => {
+
+                    if (el.product_id === Number(name)) {
+
+                        console.log("working")
+                        const arr = {}
+
+                        arr.image = el.image;
+                        arr.price = el.price;
+                        arr.titlename = el.titlename;
+                        arr.product_id = el.product_id;
+                        arr.order_id = order_id;
+                        arr.order_date = ondate;
+                        arr.payment_option = payment_option;
+                        arr.email = user.email;
+                        arr.status = true;
+
+                        order.push(arr);
+                        localStorage.setItem("order", JSON.stringify(order));
+                        window.location.href = "../html/orderplaced.html";
+                    }
+                })
+            }
+
+            else {
+                const cart_sample = JSON.parse(localStorage.getItem("cart"));
+                const user = JSON.parse(localStorage.getItem("active_user"));
+
+                cart_sample.find((e) => {
+                    if (e.email == user.email) {
+                        const arr = {}
+
+                        arr.image = e.image;
+                        arr.price = e.price;
+                        arr.titlename = e.titlename;
+                        arr.product_id = e.product_id;
+                        arr.order_id = order_id;
+                        arr.order_date = ondate;
+                        arr.payment_option = payment_option;
+                        arr.email = user.email;
+                        arr.status = true;
+
+
+                        order.push(arr);
+                        localStorage.setItem("order", JSON.stringify(order));
+                        window.location.href = "../html/orderplaced.html";
+                    }
+                })
+            }
+        }
+
+
+        // const cart_item = JSON.parse(localStorage.getItem("cart"));
+        // const activeuser = JSON.parse(localStorage.getItem("active_user"));
+
+        // let cart_object = cart_item.filter(function (obj) {
+        //     if (obj["email"] === activeuser["email"]) {
+        //         return false;
+        //     } else {
+        //         return true;
+        //     }
+        // });
+        // localStorage.setItem("cart", JSON.stringify(cart_object));
+
+
+
+        let quant
+        // let productdetails=JSON.parse(localStorage)
+        let product_detail = JSON.parse(localStorage.getItem("product_details"))
+
+        if (name == Number(name)) {
+
+            let result;
+            products.find((el) => {
+
+                if (el.product_id === Number(name)) {
+
+                    product_detail.find(ee => {
+                        if (el.titlename == ee.name_of_product) {
+                            quant = ee.quantity_of_product
+                            productprice = ee.price
+                        }
+                    })
+
+                    let div = document.createElement("div");
+                    div.setAttribute("class", "box_div");
+
+                    let para_1 = document.createElement("p");
+                    para_1.setAttribute("class", "product1");
+                    para_1.innerText = "Product:";
+                    div.append(para_1)
+
+                    let image_veg = document.createElement("img");
+                    image_veg.setAttribute("class", "tomato");
+                    image_veg.setAttribute("src", el.image);
+                    div.append(image_veg);
+
+                    let para_2 = document.createElement("p");
+                    para_2.setAttribute("class", "name1");
+                    para_2.innerText = "Product Name:";
+                    div.append(para_2)
+
+                    let heading1 = document.createElement("h1");
+                    heading1.setAttribute("class", "titlename");
+                    heading1.innerText = el.titlename;
+                    div.append(heading1);
+
+                    let para_3 = document.createElement("p");
+                    para_3.setAttribute("class", "price");
+                    para_3.innerText = "Product Price:";
+                    div.append(para_3)
+
+                    let heading2 = document.createElement("h2");
+                    heading2.setAttribute("class", "amount");
+                    heading2.innerText = `₹${productprice}`;
+                    div.append(heading2);
+
+                    let para_4 = document.createElement("p");
+                    para_4.setAttribute("class", "price");
+                    para_4.innerText = "Product Quantity:";
+                    div.append(para_4)
+
+                    let heading3 = document.createElement("h2");
+                    heading3.setAttribute("class", "quantity");
+                    heading3.innerText = `₹${quant}`;
+                    div.append(heading3);
+                    // let decrement = document.createElement("button");
+                    // decrement.setAttribute("class", "btn1 btn-decrement");
+                    // decrement.innerText = "-"
+                    // div.append(decrement)
+
+                    // let adding = document.createElement("input");
+                    // adding.setAttribute("class", "btn-input")
+                    // adding.setAttribute("id", "quantity")
+                    // adding.setAttribute("type", "text")
+                    // adding.setAttribute("value", "1")
+                    // div.append(adding)
+
+                    // let increment = document.createElement("button")
+                    // increment.setAttribute("id", "increment")
+                    // increment.setAttribute("class", "btn1 btn-increment")
+                    // increment.innerText = "+"
+                    // div.append(increment)
+
+                    document.querySelector(".store").append(div);
+
+                }
+
+            });
+        }
+
+        else {
+
+            const cart_sample = JSON.parse(localStorage.getItem("cart"));
+            const user = JSON.parse(localStorage.getItem("active_user"));
+
+            cart_sample.find((e) => {
+                if (e.email == user.email) {
+
+                    let div = document.createElement("div");
+                    div.setAttribute("class", "box_div");
+
+                    let para_1 = document.createElement("p");
+                    para_1.setAttribute("class", "product1");
+                    para_1.innerText = "Product:";
+                    div.append(para_1)
+
+                    let image_veg = document.createElement("img");
+                    image_veg.setAttribute("class", "tomato");
+                    image_veg.setAttribute("src", e.image);
+                    div.append(image_veg);
+
+                    let para_2 = document.createElement("p");
+                    para_2.setAttribute("class", "name1");
+                    para_2.innerText = "Product Name:";
+                    div.append(para_2)
+
+                    let heading1 = document.createElement("h1");
+                    heading1.setAttribute("class", "titlename");
+                    heading1.innerText = e.titlename;
+                    div.append(heading1);
+
+                    let para_3 = document.createElement("p");
+                    para_3.setAttribute("class", "price");
+                    para_3.innerText = "Product Price:";
+                    div.append(para_3)
+
+                    let heading2 = document.createElement("h2");
+                    heading2.setAttribute("class", "amount");
+                    heading2.innerText = `₹${e.price}`;
+                    div.append(heading2);
+
+                    let para_4 = document.createElement("p");
+                    para_4.setAttribute("class", "price");
+                    para_4.innerText = "Product Quantity:";
+                    div.append(para_4)
+
+                    let heading3 = document.createElement("h2");
+                    heading3.setAttribute("class", "quantity");
+                    heading3.innerText = `₹${e.quanty}`;
+                    div.append(heading3);
+
+                    document.querySelector(".store").append(div);
+
+                }
+
+            })
+
+        }
+
+        const form = document.getElementById("payment_details");
+
+        form.addEventListener("submit", (el) => {
+            el.preventDefault();
+
+        });
+        // payment
+        const pay = document.getElementById("upi")
+        const expand = document.getElementById("expand");
+        const hidden = document.querySelector(".hidden");
+        const cash = document.getElementById("cashondelivery");
+        expand.addEventListener("click", function () {
+            hidden.innerHTML = ` <div class="inputBox">
+                        <span>name on card :</span>
+                        <input id="name_on_card" class="payment_option" type="text">
+                    </div>
+                    <div class="inputBox">
+                        <span>Card number :</span>
+                        <input id="creditcard" type="number">
+                    </div>
+                    <div class="inputBox">
+                        <span class="mobile">Branch Name:</span>
+                        <input id="branchname" type="text">
+                    </div><br>
+                    <div class="inputBox">
+                        <label>Card Expiry (MM/YYYY)
+                        <input type="tel" id="cc_exp" placeholder="•• / ••••" data-payment='cc-exp'>
+                       </label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="mobile">CVV Number:</span>
+                        <input id="cvv" type="text">
+                    </div> `
+        })
+        cash.addEventListener("click", function () {
+            hidden.innerHTML = ""
+
+        })
+        pay.addEventListener("click", function () {
+            hidden.innerHTML = ""
+
+        })
+
+    </script>
+
 </body>
 
 </html>

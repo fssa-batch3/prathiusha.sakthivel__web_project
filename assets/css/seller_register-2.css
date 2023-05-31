@@ -1,0 +1,128 @@
+/* header */
+header {
+
+    background-color: rgb(108, 145, 53);
+    height: 100px;
+    width: 99%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    top: 0%;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+.menu-bar .main {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    margin-left: 350px;
+
+}
+
+.menu-bar {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+}
+
+.menu-bar .main a {
+    padding-left: 70px;
+}
+
+.logo {
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 60px;
+    width: 170px;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.navi {
+    text-decoration: none;
+    color: white;
+}
+
+.navi:hover {
+    font-size: 35px;
+    color: black;
+}
+input{
+    height: 30px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+button{
+    height: 35px;
+    width: 220px;
+    border: 0px solid rgb(108, 145, 53);
+    background-color: rgb(108, 145, 53);
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    margin-left: 180px;
+    
+}
+
+.container{
+    padding-left: 30px;
+    border: 3px solid rgb(247, 246, 246);
+    box-shadow: -5px 5px 10px 5px  rgb(218, 214, 214);
+    background-color: white;
+    height: 550px;
+    width: 600px;
+    margin-left: 450px;
+    margin-top: 200px;
+    font-size: 20px;
+    
+}
+input:focus{
+    border-radius: 30px;
+    outline: none;
+    border-color: rgb(56, 86, 9);
+    box-shadow: 1px 1px 1px 1px rgb(108, 145, 53);
+}
+#image{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#titlename{
+    margin-top: 30px;
+    margin-left: 65px;
+}
+#price{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+#ratings{
+    margin-top: 30px;
+    margin-left: 45px;
+}
+table td img{
+    width: 150px;
+    height: 150px;
+}
+
+
+table {
+    margin-left: -300px;
+    margin-top: 150px;
+    padding: 30px;
+}
